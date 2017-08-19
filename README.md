@@ -1,2 +1,2 @@
-# java8-features
+# Java8-features
 Examples for all java 8 features
