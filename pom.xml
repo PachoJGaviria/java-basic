@@ -1,27 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>java8-features</groupId>
-	<artifactId>java8-features</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Java8_Features</name>
-	<description>Java8 Features</description>
+	<groupId>java-basic</groupId>
+	<artifactId>java</artifactId>
+	<version>0.0.1</version>
+	<name>java-basic</name>
+	<description>Java basic concepts</description>
 	<packaging>pom</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<junit.version>5.5.0-M1</junit.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>example</module>
-	</modules>
+		<module>basic-concepts</module>
+        <module>example</module>
+    </modules>
 </project>
